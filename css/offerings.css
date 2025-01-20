@@ -96,7 +96,7 @@ section h2 {
 /* Featured Poet & Guest Judge Sections */
 .featured-poet,
 .guest-judge {
-    background: #f4f4f4;
+    background: #3F242B;
     padding: 40px 20px;
     margin-bottom: 20px;
 }
@@ -115,7 +115,7 @@ section h2 {
 
 /* Workshop Cards */
 .card {
-    background: #f9f9f9;
+    background: #3F242B;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -131,7 +131,7 @@ section h2 {
 
 /* Review Section */
 .reviews {
-    background: #f4f4f4;
+    background: #997B82;
     text-align: center;
     padding: 40px 20px;
 }
