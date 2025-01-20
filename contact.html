@@ -18,7 +18,31 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+<body>
+    <div class="contact-container">
+        <!-- Image section -->
+        <div class="contact-image">
+            <img src="your-image.jpg" alt="Contact Illustration">
+        </div>
 
+        <!-- Contact form section -->
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <p class="priority-note">
+                Organizations and initiatives led by and/or catered to Black and Brown communities will have priority, but collaboration remains open to everyone. Thank you for your understanding.
+            </p>
+            <form action="submit-form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
  <footer class="footer">
     <div class="footer-container">
       <p>© 2025 Maddie P. All rights reserved.</p>
