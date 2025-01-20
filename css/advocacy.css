@@ -1,1 +1,73 @@
-Placeholder
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3D000E;
+    padding: 1rem 2rem;
+    color: #F5F5F5;
+}
+
+.navbar .logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Garamond', serif;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    color: #997B82;
+}
+
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Garamond, serif;
+  background-color: #440B19;
+  color: #F5F5F5;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Dancing Script', cursive;
+  color: #F5F5F5;
+  margin: 0;
+}
+/* Footer */
+.footer {
+  background-color: #3D000E;
+  padding: 10px;
+  color: #F5F5F5;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.socials li a {
+  color: #A79986;
+}
