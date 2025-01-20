@@ -80,7 +80,7 @@ header h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 20px;
     gap: 20px;
 }
@@ -104,6 +104,9 @@ header h1 {
     padding: 20px;
     border-radius: 15px; /* Rounded corners for the form */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 /* Form heading */
@@ -131,13 +134,14 @@ header h1 {
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 10px; /* Rounded corners for inputs */
-    font-size: 14px;
-    box-sizing: border-box;
+     width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Submit button */
