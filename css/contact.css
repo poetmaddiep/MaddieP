@@ -48,6 +48,35 @@ h1, h2, h3 {
   color: #F5F5F5;
   margin: 0;
 }
+/* Header */
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #440B19;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+.subheading {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.microphone {
+  display: flex; /* Center the image */
+  justify-content: center; /* Horizontally align in the center */
+  margin: 10px auto; /* Add space above and below */
+}
+
+.microphone img {
+  width: 150px; /* Ensure consistent width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
 /* Footer */
 .footer {
   background-color: #3D000E;
