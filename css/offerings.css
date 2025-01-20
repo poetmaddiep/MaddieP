@@ -51,7 +51,7 @@ h1, h2, h3 {
 
 /* Hero Section */
 .hero {
-    background: url('hero-image.jpg') center/cover no-repeat;
+    background: url('assets/images/perform4.jpg') center/cover no-repeat;
     color: white;
     text-align: center;
     padding: 100px 20px;
