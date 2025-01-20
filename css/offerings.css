@@ -48,6 +48,99 @@ h1, h2, h3 {
   color: #F5F5F5;
   margin: 0;
 }
+
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.hero-content .btn:hover {
+    background: #0056b3;
+}
+
+/* Section Styles */
+section {
+    padding: 50px 20px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Featured Poet & Guest Judge Sections */
+.featured-poet,
+.guest-judge {
+    background: #f4f4f4;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+}
+
+/* Workshop Host Section */
+.workshop-host {
+    background: #fff;
+}
+
+.workshop-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Workshop Cards */
+.card {
+    background: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Review Section */
+.reviews {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.review {
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #555;
+}
 /* Footer */
 .footer {
   background-color: #3D000E;
