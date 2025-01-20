@@ -48,3 +48,26 @@ h1, h2, h3 {
   color: #F5F5F5;
   margin: 0;
 }
+/* Footer */
+.footer {
+  background-color: #3D000E;
+  padding: 10px;
+  color: #F5F5F5;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.socials li a {
+  color: #A79986;
+}
