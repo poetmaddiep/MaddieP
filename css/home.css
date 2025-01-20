@@ -38,7 +38,7 @@
 body {
   margin: 0;
   font-family: Garamond, serif;
-  background-color: #3F242B;
+  background-color: #440B19;
   color: #F5F5F5;
   line-height: 1.6;
 }
@@ -64,7 +64,7 @@ a {
 header {
   text-align: center;
   padding: 50px 20px;
-  background-color: #3E3D38;
+  background-color: #440B19;
 }
 
 header h1 {
@@ -94,7 +94,7 @@ header h1 {
   margin: 20px 0;
   border: 1px solid #A79986;
   border-radius: 5px;
-  background-color: #3E3D38;
+  background-color: #3F242B;
 }
 
 #about p {
@@ -109,20 +109,31 @@ header h1 {
   padding: 50px 20px;
 }
 
-.video, .shows {
+.video{
   flex: 1;
   max-width: 300px;
   margin: 10px;
-  background-color: #3E3D38;
+  background-color: #3F242B;
   border-radius: 5px;
   padding: 20px;
   color: #A79986;
   display: flex;
+} 
+
+.shows {
+   flex: 1;
+  margin: 10px;
+  background-color: #3F242B;
+  border-radius: 5px;
+  padding: 20px;
+  color: #A79986;
 }
 
 .video video {
    width: 100%;
   height: auto;
+  border-radius: 5px;
+
 }
 
 
