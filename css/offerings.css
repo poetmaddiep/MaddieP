@@ -68,7 +68,7 @@ h1, h2, h3 {
 .hero-content .btn {
     display: inline-block;
     background: #007BFF;
-    color: white;
+    color: 3D000E;
     padding: 10px 20px;
     border-radius: 20px;
     text-decoration: none;
@@ -97,6 +97,7 @@ section h2 {
     background: #3F242B;
     padding: 40px 20px;
     margin-bottom: 20px;
+    text: #fff;
 }
 
 /* Workshop Host Section */
@@ -120,6 +121,7 @@ section h2 {
     flex: 1;
     min-width: 250px;
     max-width: 300px;
+    text: #fff;
 }
 
 .card h3 {
@@ -129,9 +131,10 @@ section h2 {
 
 /* Review Section */
 .reviews {
-    background: #997B82;
+    background: #4B1523;
     text-align: center;
     padding: 40px 20px;
+    text: #fff;
 }
 
 .review {
