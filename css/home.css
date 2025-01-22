@@ -60,32 +60,35 @@ a {
   margin: 0 auto;
 }
 
-/* Header */
-header {
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/images/perform4.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
   text-align: center;
-  padding: 50px 20px;
-  background-color: #440B19;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
-header h1 {
-  font-size: 2.5rem;
-}
-
-.subheading {
-  margin-top: 10px;
-  font-size: 1.2rem;
-}
-
-.microphone {
-  display: flex; /* Center the image */
-  justify-content: center; /* Horizontally align in the center */
-  margin: 10px auto; /* Add space above and below */
-}
-
-.microphone img {
-  width: 150px; /* Ensure consistent width */
-  height: auto; /* Maintain aspect ratio */
-}
 
 /* About Section */
 #about {
