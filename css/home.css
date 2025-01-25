@@ -144,55 +144,54 @@ object-fit: cover;
 
 /* Events Section */
 .events-section {
-  padding: 50px 20px;
+  margin: 40px;
+  padding: 20px;
   background-color: #3F242B;
-}
-
-.events-section h2 {
-  color: #FFF;
-  font-size: 2rem;
+  border: 2px solid #66575B;
+  border-radius: 15px;
 }
 
 .events-calendar {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
-}
-
-.events-calendar th, .events-calendar td {
-  border: 1px solid #533E43;
-  padding: 10px;
-  text-align: left;
-  color: #FFF;
+  margin-bottom: 20px;
 }
 
 .events-calendar th {
-  background-color: #440B19;
+  background-color: #A2878D;
+  color: white;
+  padding: 10px;
+  border: 1px solid #66575B;
+}
+
+.events-calendar td {
+  padding: 10px;
+  border: 1px solid #66575B;
 }
 
 /* Organization Section */
 .organizations-section {
-  padding: 50px 20px;
+  margin: 40px;
+  padding: 20px;
   background-color: #4B1523;
-}
-
-.organizations-section h2 {
-  color: #FFF;
-  font-size: 2rem;
+  border-radius: 15px;
 }
 
 .organization-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
   gap: 20px;
-  margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .card {
-  background-color: #533E43;
+  flex: 1;
+  min-width: 200px;
+  background-color: #3F242B;
+  color: white;
   padding: 20px;
-  border-radius: 10px;
-  color: #FFF;
+  border-radius: 15px;
+  text-align: center;
+}
 }
 
 .card h3 {
@@ -208,8 +207,12 @@ object-fit: cover;
 /* Footer */
 .footer {
   background-color: #3D000E;
-  padding: 10px;
-  color: #F5F5F5;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  color: white;
+  position: relative;
+  bottom: 0;
 }
 
 .footer-container {
