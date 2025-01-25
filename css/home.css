@@ -134,7 +134,7 @@ body, html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: stretch;
 }
 
 .video video {
@@ -159,7 +159,7 @@ object-fit: cover;
 }
 
 .events-calendar th {
-  background-color: #A2878D;
+  background-color: #66575B;
   color: white;
   padding: 10px;
   border: 1px solid #66575B;
@@ -174,7 +174,7 @@ object-fit: cover;
 .organizations-section {
   margin: 40px;
   padding: 20px;
-  background-color: #4B1523;
+  background-color: #440B19;
   border-radius: 15px;
 }
 
