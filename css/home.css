@@ -103,6 +103,7 @@ body, html {
   border: 1px solid #A79986;
   border-radius: 5px;
   background-color: #3F242B;
+  max-width: 80%;
 }
 
 #about p {
@@ -122,7 +123,7 @@ body, html {
 
 .video, .shows {
   flex: 1;
-  max-width: 300px;
+  max-width: 400px;
   height: 300px;
   margin: 10px;
   background-color: #3F242B;
