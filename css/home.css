@@ -100,10 +100,10 @@ body, html {
   text-align: center;
   padding: 30px 20px;
   margin: 20px 0;
-  border: 1px solid #A79986;
+  border: 1px solid #997B82;
   border-radius: 5px;
   background-color: #3F242B;
-  max-width: 80%;
+  max-width: 100%;
 }
 
 #about p {
@@ -127,7 +127,7 @@ body, html {
   height: 300px;
   margin: 10px;
   background-color: #3F242B;
-  border: 1px solid #A79986;
+  border: 1px solid #997B82;
   border-radius: 5px;
   padding: 20px;
   color: #A79986;
@@ -153,6 +153,7 @@ object-fit: cover;
 }
 
 .events-calendar {
+  height: 100%;
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
