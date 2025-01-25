@@ -100,7 +100,7 @@ body, html {
   text-align: center;
   padding: 30px 20px;
   margin: 20px 0;
-  border: 1px solid #997B82;
+  border: 2px solid #66575B;
   border-radius: 5px;
   background-color: #3F242B;
   max-width: 100%;
@@ -202,7 +202,7 @@ object-fit: cover;
 
 .card p {
   font-size: 1rem;
-  color: #997B82;
+  color: #A2878D;
 }
 
 
