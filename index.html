@@ -98,36 +98,22 @@ Index.html
         </div>
       </div>
      </section>
-   <!-- Gallery -->
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Tab Gallery</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-<section>
-    <div class="row">
-        <div class="column">
-            <img src="assets/images/perform3.jpg" alt="Performance 3" onclick="openImage(this);">
-        </div>
-        <div class="column">
-            <img src="assets/images/perform4.jpg" alt="Performance 4" onclick="openImage(this);">
-        </div>
+  
+   <!-- Tab Gallery -->
+<section class="gallery">
+    <div class="main-image">
+        <img id="displayedImage" src="assets/images/perform3.jpg" alt="Main Image">
     </div>
-
-    <!-- Expanding Image Container -->
-    <div class="container" id="imageViewer">
-        <span class="closebtn" onclick="closeImage()">&times;</span>
-        <img id="expandedImg">
-        <div id="imgtext"></div>
+    
+    <div class="thumbnail-row">
+        <img class="thumbnail" src="assets/images/perform3.jpg" alt="Performance 3" onclick="changeImage(this);">
+        <img class="thumbnail" src="assets/images/perform4.jpg" alt="Performance 4" onclick="changeImage(this);">
+        <img class="thumbnail" src="assets/images/perform5.jpg" alt="Performance 5" onclick="changeImage(this);">
+        <img class="thumbnail" src="assets/images/perform6.jpg" alt="Performance 6" onclick="changeImage(this);">
     </div>
-
-    <a href="performances.html" class="btn-secondary">Performances</a>
+  <a href="performances.html" class="btn-secondary">Performances</a>
 </section>
+   
 
 <script src="script.js"></script>
 </body>
