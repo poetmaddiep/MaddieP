@@ -15,13 +15,17 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
-function openImage(img) {
-    document.getElementById("expandedImg").src = img.src;
-    document.getElementById("imgtext").innerHTML = img.alt;
-    document.getElementById("imageViewer").style.display = "flex";
+// Navigation Toggle
+function toggleMenu() {
+    const nav = document.getElementById("navMenu");
+    if (nav.style.display === "block") {
+        nav.style.display = "none";
+    } else {
+        nav.style.display = "block";
+    }
 }
 
-function closeImage() {
-    document.getElementById("imageViewer").style.display = "none";
+// Tab Gallery Functionality
+function changeImage(img) {
+    document.getElementById("displayedImage").src = img.src;
 }
-
