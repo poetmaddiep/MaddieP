@@ -48,7 +48,7 @@ Index.html
         Your browser does not support the video tag. Please download the video <a href="../assets/video/about.mp4">here</a>.
     </video>
     </div>
-   
+  </section>
     <!-- Upcoming Events Section -->
     <section id="events" class="events-section">
       <h2>Upcoming Events</h2>
@@ -61,8 +61,13 @@ Index.html
           </tr>
         </thead>
         <tbody>
+         <tr>
+            <td> February 23, 2025</td>
+            <td>Writing Workshop</td>
+            <td>Online</td>
+          </tr>
           <tr>
-            <td>January 26, 2025</td>
+            <td> March 2, 2025</td>
             <td>Writing Workshop</td>
             <td>Online</td>
           </tr>
@@ -92,7 +97,36 @@ Index.html
           <p>Advocating for social justice through art.</p>
         </div>
       </div>
-      <a href="performances.html" class="btn-secondary">Check Out Other Performances</a>
+     </section>
+   <!-- Gallery -->
+   <section>
+    <div class="row">
+  <div class="column">
+    <img src="assets/images/perform3.jpg" alt="Test" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/images/perform4.jpg" alt="Snow" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/images/perform3.jpg" alt="Mountains" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/images/perform4.jpg" alt="Lights" onclick="myFunction(this);">
+  </div>
+</div>
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+      <a href="performances.html" class="btn-secondary">Performances</a>
     </section>
 
  <!-- Footer-->
