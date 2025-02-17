@@ -95,7 +95,7 @@ body {
     justify-content: center;
     text-align: center;
     padding: 20px;
-    background: url('') no-repeat center center/cover;
+    background: url('assets/images/perform4.jpg') no-repeat center center/cover;
 }
 
 .hero-text {
@@ -116,7 +116,7 @@ body {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 1rem;
-    border: none;
+    border: white;
     background: #506a71;
     color: white;
     cursor: pointer;
@@ -141,7 +141,7 @@ section {
 /* About */
 
 section {
-    border: 1px solid red;
+    border: 2px #3e4a72;
 }
 #about {
     background: rgba(0, 0, 0, 0.7);
@@ -182,6 +182,7 @@ section {
 /* ==== ORGANIZATIONS ==== */
 .organizations-section {
     padding: 50px 20px;
+      border-radius: 8px;
 }
 
 .organization-cards {
