@@ -1,6 +1,4 @@
-@font-face {
-    font-family: 'Garamond';
-}
+
 
 /* Basic Reset */
 * {
@@ -12,6 +10,7 @@
 body {
     color: white;
 }
+
 
 /* ==== NAVIGATION ==== */
 .navbar {
@@ -95,7 +94,7 @@ body {
     justify-content: center;
     text-align: center;
     padding: 20px;
-    background: url('assets/images/perform4.jpg') no-repeat center center/cover;
+    background: url('Website Images/brick-wall.jpeg') no-repeat center center/cover;
 }
 
 .hero-text {
@@ -105,6 +104,9 @@ body {
 .hero-text h1 {
     font-size: 2rem;
     text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF;
+    font-family: "Neonderthaw", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .subheading {
@@ -117,6 +119,7 @@ body {
     padding: 10px 20px;
     font-size: 1rem;
     border: white;
+    border-radius: 8px;
     background: #506a71;
     color: white;
     cursor: pointer;
