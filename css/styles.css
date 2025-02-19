@@ -87,13 +87,13 @@ body {
 }
 
 /* ==== HERO SECTION ==== */
- background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                   url("https://github.com/poetmaddiep/MaddieP/blob/473c162e32b55c365f027f55cfedeb9c2f24102b/Website%20Images/brick-wall.jpeg");
+ background-image: url("Website Images/brick-wall.jpeg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+
 .hero-text {
     max-width: 80%;
 }
@@ -120,6 +120,7 @@ body {
     color: white;
     cursor: pointer;
     transition: 0.3s;
+    align: center;
 }
 
 .hero-text button:hover {
@@ -152,6 +153,7 @@ section {
 .video {
     text-align: center;
     margin-top: 20px;
+     border-radius: 8px;
 }
 
 .video video {
