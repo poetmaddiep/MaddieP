@@ -1,73 +1,100 @@
-/* Navigation Bar */
+
+/* ==== NAVIGATION ==== */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3D000E;
-    padding: 1rem 2rem;
-    color: #F5F5F5;
+    padding: 15px 20px;
+    background-color: #3e4a72;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-.navbar .logo {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.8rem;
+.logo {
+    font-size: 24px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
-    margin: 0;
-    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #fff;
-    font-family: 'Garamond', serif;
-    font-size: 1rem;
+    color: white;
+    font-size: 16px;
 }
 
-.nav-links a:hover {
-    color: #997B82;
+/* Mobile Navigation */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hide nav links by default on mobile */
+    @media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
 }
 
 
-/* Global Styles */
-body {
-  margin: 0;
-  font-family: Garamond, serif;
-  background-color: #440B19;
-  color: #F5F5F5;
-  line-height: 1.6;
-}
-
-h1, h2, h3 {
-  font-family: 'Dancing Script', cursive;
-  color: #F5F5F5;
-  margin: 0;
-}
-/* Footer */
+/* ==== FOOTER ==== */
 .footer {
-  background-color: #3D000E;
-  padding: 10px;
-  color: #F5F5F5;
+    background-color: #3e4a72;
+    padding: 20px;
+    text-align: center;
 }
 
 .footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .socials {
-  list-style: none;
-  display: flex;
-  gap: 10px;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
 }
 
-.socials li a {
-  color: #A79986;
+.socials a {
+    color: white;
+    text-decoration: none;
 }
