@@ -1,11 +1,11 @@
-
+2
 /* ==== NAVIGATION ==== */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: #3e4a72;
+    background-color: #263459;
     position: fixed;
     width: 100%;
     top: 0;
@@ -78,9 +78,15 @@
 body {
   margin: 0;
   font-family: Garamond, serif;
-  background-color: #440B19;
+  background-color: #3e4a72;
   color: #F5F5F5;
   line-height: 1.6;
+
+div {
+    border: 2px;
+    border-color: #829da4;
+    border-radius: 8px;
+    padding: 5px;
 /* ==== FOOTER ==== */
 .footer {
     background-color: #3e4a72;
