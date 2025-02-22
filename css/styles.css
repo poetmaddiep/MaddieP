@@ -1,4 +1,4 @@
-2
+
 /* ==== NAVIGATION ==== */
 .navbar {
     display: flex;
@@ -95,8 +95,7 @@ body {
 section {
     padding: 50px 20px;
     text-align: center;
-    border: 2px;
-    border-color: green;
+    border: 2px solid green;
     border-radius: 8px;
 
 /* ==== FOOTER ==== */
