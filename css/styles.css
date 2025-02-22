@@ -46,6 +46,16 @@
     cursor: pointer;
 }
 
+//* Mobile Navigation */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
 /* Hide nav links by default on mobile */
     @media (max-width: 768px) {
     .menu-toggle {
@@ -75,18 +85,20 @@
     }
 }
 
+
 body {
   margin: 0;
   font-family: Garamond, serif;
   background-color: #3e4a72;
   color: #F5F5F5;
   line-height: 1.6;
-
-div {
+section {
+    padding: 50px 20px;
+    text-align: center;
     border: 2px;
     border-color: #829da4;
     border-radius: 8px;
-    padding: 5px;
+
 /* ==== FOOTER ==== */
 .footer {
     background-color: #3e4a72;
