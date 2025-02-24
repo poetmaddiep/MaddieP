@@ -92,6 +92,9 @@ body {
   background-color: #3e4a72;
   color: #F5F5F5;
   line-height: 1.6;
+
+#about {
+    padding-top: 50px;
 section {
     padding: 50px 20px;
     text-align: center;
