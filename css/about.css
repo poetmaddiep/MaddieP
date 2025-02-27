@@ -1,11 +1,10 @@
-
 /* ==== NAVIGATION ==== */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: #3e4a72;
+    background-color: #263459;
     position: fixed;
     width: 100%;
     top: 0;
@@ -17,11 +16,13 @@
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 .nav-links li {
@@ -35,6 +36,16 @@
 }
 
 /* Mobile Navigation */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+//* Mobile Navigation */
 .menu-toggle {
     display: none;
     font-size: 24px;
@@ -73,6 +84,14 @@
     }
 }
 
+
+body {
+  margin: 0;
+  font-family: Garamond, serif;
+  background-color: #3e4a72;
+  color: #F5F5F5;
+  line-height: 1.6;
+}
 
 /* ==== FOOTER ==== */
 .footer {
