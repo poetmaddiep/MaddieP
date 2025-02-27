@@ -62,19 +62,20 @@
         display: block;
     }
     .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.9);
-        position: absolute;
-        top: 60px;
-        left: 0;
-        text-align: center;
-    }
+    display: none; /* Hide links by default */
+    flex-direction: column;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    text-align: center;
+}
 
-    .nav-links.active {
-        display: flex;
-    }
+.nav-links.active {
+    display: flex; /* Show links when the 'active' class is added */
+}
+
 
     .nav-links li {
         margin: 15px 0;
