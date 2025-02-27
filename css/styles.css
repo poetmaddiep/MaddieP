@@ -99,15 +99,6 @@ body {
 
 }
 
-iframe {    
-    width:50%;    
-    float:right;    
-}
-
-.clear {    
-    clear:both;    
-}
-
 section {
     padding: 50px 20px;
     text-align: center;
