@@ -116,7 +116,7 @@ body {
 
 .hero-content .btn {
     display: inline-block;
-    background: #007BFF;
+    background: #56628C;
     color: 3D000E;
     padding: 10px 20px;
     border-radius: 20px;
@@ -126,7 +126,7 @@ body {
 }
 
 .hero-content .btn:hover {
-    background: #4B1523;
+    background: #56628C;
 }
 
 /* Section Styles */
@@ -142,8 +142,8 @@ section h2 {
 
 /* Featured Poet & Guest Judge Sections */
 .featured-poet,
-.guest-judge {
-    background: #3F242B;
+.poetry-reader {
+    background: #56628C;
     padding: 40px 20px;
     margin-bottom: 20px;
     text: #fff;
@@ -163,7 +163,7 @@ section h2 {
 
 /* Workshop Cards */
 .card {
-    background: #3F242B;
+    background: #56628C;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
