@@ -98,16 +98,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    max-width: 1000px;
+    gap: 40px;
+    max-width: 900px;  /* Restricts width to prevent overflow */
     margin: 0 auto;
+    padding: 20px;
     flex-wrap: wrap;
+    border: 2px solid green;
+    border-radius: 8px;
 }
 
 /* About text */
 #about {
     flex: 1;
-    min-width: 300px; /* Ensures responsiveness */
+    min-width: 280px; /* Ensures responsiveness */
+    max-width: 450px; /* Prevents text from stretching too much */
     text-align: left;
     padding: 20px;
 }
@@ -115,8 +119,16 @@ body {
 /* YouTube Video */
 #about-video {
     flex: 1;
-    min-width: 300px; /* Ensures responsiveness */
+    min-width: 280px;
+    max-width: 450px;
     text-align: center;
+}
+
+/* Adjusting the iframe size */
+#about-video iframe {
+    width: 100%; /* Makes the video responsive */
+    max-width: 400px; /* Reduces size slightly */
+    height: 225px; /* Adjusts proportionally */
 }
 
 /* Responsive - Stacks elements on smaller screens */
@@ -125,14 +137,45 @@ body {
         flex-direction: column;
         text-align: center;
     }
+
+    #about, #about-video {
+        max-width: 100%; /* Allows full width usage for mobile */
+        text-align: center;
+    }
+
+    #about-video iframe {
+        max-width: 100%;
+        height: auto; /* Maintains aspect ratio */
+    }
 }
 
+/* General Section Styling */
 section {
-    padding: 50px 20px;
-    text-align: center;
+    padding: 40px 20px; /* Adjusted padding for more space */
+    text-align: left; /* Aligns text to the left */
     border: 2px solid green;
     border-radius: 8px;
+    max-width: 900px;
+    margin: 20px auto;
+    position: relative; /* Ensures controlled placement */
 }
+
+/* Heading Styling */
+section h2 {
+    text-align: left; /* Moves heading to the left */
+    margin: 0;
+    padding: 10px 0 5px 10px; /* Adds space from top & left */
+    font-size: 1.8em; /* Adjust size as needed */
+}
+
+/* Paragraph Styling */
+section p {
+    margin-top: 10px; /* Adds space between heading and paragraph */
+    padding: 0 10px 10px 10px; /* Adjusted padding */
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
 
 /* ==== FOOTER ==== */
 .footer {
