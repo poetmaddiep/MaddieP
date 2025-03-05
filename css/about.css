@@ -89,7 +89,7 @@ body {
   margin: 0;
   font-family: Garamond, serif;
   background-color: #3e4a72;
-  color: #F5F5F5;
+  color: #3e4a72;
   line-height: 1.6;
 }
 .container {
@@ -121,7 +121,7 @@ body {
             margin-top: 40px;
         }
         a {
-            color: #ff6b6b;
+            color: #006666;
             text-decoration: none;
         }
         a:hover {
