@@ -159,27 +159,27 @@ header h1 {
 .contact-form button:hover {
     background-color: #0056b3;
     }
-
-/* Footer */
+/* ==== FOOTER ==== */
 .footer {
-  background-color: #3D000E;
-  padding: 10px;
-  color: #F5F5F5;
+    background-color: #263459;
+    padding: 20px;
+    text-align: center;
 }
 
 .footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .socials {
-  list-style: none;
-  display: flex;
-  gap: 10px;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
 }
 
-.socials li a {
-  color: #A79986;
+.socials a {
+    color: white;
+    text-decoration: none;
 }
