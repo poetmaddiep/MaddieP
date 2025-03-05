@@ -46,16 +46,6 @@
     cursor: pointer;
 }
 
-//* Mobile Navigation */
-.menu-toggle {
-    display: none;
-    font-size: 24px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
 /* Hide nav links by default on mobile */
     @media (max-width: 768px) {
     .menu-toggle {
