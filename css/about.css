@@ -92,20 +92,32 @@ body {
   color: #F5F5F5;
   line-height: 1.6;
 }
-.container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        h1, h2 {
-            color: #444;
-        }
-        p {
-            line-height: 1.8;
-        }
+/* General Section Styling */
+section {
+    padding: 40px 20px; /* Adjusted padding for more space */
+    text-align: left; /* Aligns text to the left */
+    border: 2px solid green;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 20px auto;
+    position: relative; /* Ensures controlled placement */
+}
+
+/* Heading Styling */
+section h2 {
+    text-align: left; /* Moves heading to the left */
+    margin: 0;
+    padding: 10px 0 5px 10px; /* Adds space from top & left */
+    font-size: 1.8em; /* Adjust size as needed */
+}
+
+/* Paragraph Styling */
+section p {
+    margin-top: 10px; /* Adds space between heading and paragraph */
+    padding: 0 10px 10px 10px; /* Adjusted padding */
+    font-size: 1.1em;
+    line-height: 1.6;
+}
         .bio-img {
             width: 100%;
             max-width: 250px;
