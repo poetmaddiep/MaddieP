@@ -109,8 +109,8 @@ body {
 
 .hero-content .btn {
     display: inline-block;
-    background: #56628C;
-    color: 3D000E;
+    background: #263459;
+    color: #3D000E;
     padding: 10px 20px;
     border-radius: 20px;
     text-decoration: none;
@@ -183,6 +183,12 @@ section h2 {
     margin-bottom: 20px;
     font-style: italic;
     color: #fff;
+}
+.review-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 /* Footer */
 .footer {
