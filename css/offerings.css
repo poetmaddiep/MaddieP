@@ -45,35 +45,28 @@
     cursor: pointer;
 }
 
-//* Mobile Navigation */
-.menu-toggle {
-    display: none;
-    font-size: 24px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
 /* Hide nav links by default on mobile */
     @media (max-width: 768px) {
     .menu-toggle {
         display: block;
     }
-    .nav-links {
-    display: none; /* Hide links by default */
-    flex-direction: column;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.9);
+   .nav-links {
+    display: none; /* Hide by default */
     position: absolute;
     top: 60px;
-    left: 0;
-    text-align: center;
+    right: 10px;
+    background: white;
+    width: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+    .nav-links a {
+    color: black
+}
+.nav-links.active {
+    display: block; /* Show when active */
 }
 
-.nav-links.active {
-    display: flex; /* Show links when the 'active' class is added */
-}
+
 
     .nav-links li {
         margin: 15px 0;
@@ -151,7 +144,7 @@ section h2 {
 
 /* Workshop Host Section */
 .workshop-host {
-    background: #fff;
+    background: #56628C;
 }
 
 .workshop-cards {
@@ -180,7 +173,7 @@ section h2 {
 
 /* Review Section */
 .reviews {
-    background: #4B1523;
+    background: #56628C;
     text-align: center;
     padding: 40px 20px;
     text: #fff;
@@ -189,11 +182,11 @@ section h2 {
 .review {
     margin-bottom: 20px;
     font-style: italic;
-    color: #555;
+    color: #fff;
 }
 /* Footer */
 .footer {
-  background-color: #3D000E;
+  background-color: #263459;
   padding: 10px;
   color: #F5F5F5;
 }
