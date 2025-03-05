@@ -85,6 +85,7 @@ body {
   line-height: 1.6;
 }
 /* Container to align about section and video */
+.navli
 .about-container {
     display: flex;
     align-items: center;
@@ -124,6 +125,11 @@ body {
 
 /* Responsive - Stacks elements on smaller screens */
 @media (max-width: 768px) {
+
+    .nav-links 
+    .nav-links a{
+        text-color: #3e4a72;
+    }
     .about-container {
         flex-direction: column;
         text-align: center;
