@@ -88,8 +88,8 @@ body {
 }
 
 @media (max-width: 768px) {
-    .img{
-        max-width: 120px;
+    img{
+        max-width: 75px;
     }
         }
     img {
