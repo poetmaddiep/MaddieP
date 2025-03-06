@@ -97,8 +97,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     flex-wrap: wrap;
-    border: 2px;
-    border-color: #9999ff;
+    border: 2px solid green;
     border-radius: 8px;
 }
 
@@ -150,8 +149,7 @@ body {
 section {
     padding: 40px 20px; /* Adjusted padding for more space */
     text-align: left; /* Aligns text to the left */
-    border: 2px;
-    border-color: #9999ff;
+    border: 2px solid green;
     border-radius: 8px;
     max-width: 900px;
     margin: 20px auto;
