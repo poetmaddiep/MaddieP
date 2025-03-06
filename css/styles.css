@@ -86,6 +86,15 @@ body {
   color: #F5F5F5;
   line-height: 1.6;
 }
+
+@media (max-width: 768px) {
+    .img{
+        max-width: 560px;
+    }
+        }
+    img {
+  clip-path: circle(50%);
+}
 /* Container to align about section and video */
 .navli
 .about-container {
