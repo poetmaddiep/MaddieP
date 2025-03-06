@@ -151,7 +151,7 @@ img {
 
   /* Mobile specific image size */
   img {
-    max-width: 75px;  /* Keeps the image smaller on mobile */
+    max-width: 120px;  /* Keeps the image smaller on mobile */
     margin-bottom: 20px; /* Adds spacing between image and the text below */
   }
 }
