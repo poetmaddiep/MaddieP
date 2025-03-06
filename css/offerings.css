@@ -110,7 +110,7 @@ body {
 .hero-content .btn {
     display: inline-block;
     background: #263459;
-    color: #3D000E;
+    color: #fff;
     padding: 10px 20px;
     border-radius: 20px;
     text-decoration: none;
@@ -119,7 +119,7 @@ body {
 }
 
 .hero-content .btn:hover {
-    background: #56628C;
+    background: #8e82fe;
 }
 
 /* Section Styles */
@@ -145,6 +145,8 @@ section h2 {
 /* Workshop Host Section */
 .workshop-host {
     background: #56628C;
+    border-bottom: 5px solid #3e4a72;
+    padding-bottom: 30px; 
 }
 
 .workshop-cards {
