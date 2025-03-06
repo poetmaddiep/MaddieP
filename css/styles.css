@@ -1,4 +1,3 @@
-
 /* ==== NAVIGATION ==== */
 .navbar {
     display: flex;
@@ -18,6 +17,7 @@
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Cormorant Garamond', serif;
+    color: white; /* Ensure the logo text is white */
 }
 
 .nav-links {
@@ -34,6 +34,12 @@
     text-decoration: none;
     color: white;
     font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+    color: #8e82fe; /* Change color on hover */
 }
 
 /* Mobile Navigation */
@@ -47,27 +53,26 @@
 }
 
 /* Hide nav links by default on mobile */
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
     .menu-toggle {
         display: block;
     }
-   .nav-links {
-    display: none; /* Hide by default */
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    background: white;
-    width: 200px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
+    .nav-links {
+        display: none; /* Hide by default */
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: white;
+        width: 200px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
     .nav-links a {
-    color: black
-}
-.nav-links.active {
-    display: block; /* Show when active */
-}
-
-
+        color: black;
+        padding: 10px;
+    }
+    .nav-links.active {
+        display: block; /* Show when active */
+    }
 
     .nav-links li {
         margin: 15px 0;
@@ -78,98 +83,100 @@
     }
 }
 
-
 body {
-  margin: 0;
-  font-family: Garamond, serif;
-  background-color: #3e4a72;
-  color: #F5F5F5;
-  line-height: 1.6;
+    margin: 0;
+    font-family: Garamond, serif;
+    background-color: #3e4a72;
+    color: #F5F5F5;
+    line-height: 1.6;
 }
 
 /* General image styles for the about section */
 img {
-  clip-path: circle(50%);
-  max-width: 100%; /* Ensures the image doesn't stretch beyond its container */
-  object-fit: cover; /* Maintains aspect ratio */
+    clip-path: circle(50%);
+    max-width: 100%; /* Ensures the image doesn't stretch beyond its container */
+    object-fit: cover; /* Maintains aspect ratio */
 }
 
 /* Container to align about section and video */
-.navli .about-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-  flex-wrap: wrap;
-  border: 2px solid #8e82fe;
-  border-radius: 8px;
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-wrap: wrap;
+    border: 2px solid #8e82fe;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.7); /* Lighten the container for contrast */
 }
+
 /* Make sure video takes full width and height */
 .background-video-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: -1; /* Makes sure video stays behind content */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Makes sure video stays behind content */
 }
 
 .background-video {
-  object-fit: cover; /* Ensures video covers entire background */
-  width: 100%;
-  height: 100%;
-  filter: blur(8px); /* This adds the blur effect */
+    object-fit: cover; /* Ensures video covers entire background */
+    width: 100%;
+    height: 100%;
+    filter: blur(8px); /* This adds the blur effect */
 }
+
 /* About text */
 #about {
-  flex: 1;
-  min-width: 280px;
-  max-width: 450px;
-  text-align: left;
-  padding: 20px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 450px;
+    text-align: left;
+    padding: 20px;
 }
 
 /* YouTube Video */
 #about-video {
-  flex: 1;
-  min-width: 280px;
-  max-width: 450px;
-  text-align: center;
+    flex: 1;
+    min-width: 280px;
+    max-width: 450px;
+    text-align: center;
 }
 
 /* Adjusting the iframe size */
 #about-video iframe {
-  width: 100%;
-  max-width: 400px;
-  height: 225px;
+    width: 100%;
+    max-width: 400px;
+    height: 225px;
 }
 
 /* Responsive - Stacks elements on smaller screens */
 @media (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-    text-align: center;
-  }
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
 
-  #about, #about-video {
-    max-width: 100%; /* Allows full width usage for mobile */
-    text-align: center;
-  }
+    #about, #about-video {
+        max-width: 100%; /* Allows full width usage for mobile */
+        text-align: center;
+    }
 
-  #about-video iframe {
-    max-width: 100%;
-    height: auto; /* Maintains aspect ratio */
-  }
+    #about-video iframe {
+        max-width: 100%;
+        height: auto; /* Maintains aspect ratio */
+    }
 
-  /* Mobile specific image size */
-  img {
-    max-width: 120px;  /* Keeps the image smaller on mobile */
-    margin-bottom: 20px; /* Adds spacing between image and the text below */
-  }
+    /* Mobile specific image size */
+    img {
+        max-width: 120px;  /* Keeps the image smaller on mobile */
+        margin-bottom: 20px; /* Adds spacing between image and the text below */
+    }
 }
 
 /* General Section Styling */
@@ -181,6 +188,7 @@ section {
     max-width: 900px;
     margin: 20px auto;
     position: relative; /* Ensures controlled placement */
+    background-color: rgba(255, 255, 255, 0.7); /* Slight transparency for sections */
 }
 
 /* Heading Styling */
@@ -199,27 +207,33 @@ section p {
     line-height: 1.6;
 }
 
-
 /* Footer */
 .footer {
-  background-color: #263459;
-  padding: 10px;
-  color: #F5F5F5;
+    background-color: #263459;
+    padding: 10px;
+    color: #F5F5F5;
 }
 
 .footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .socials {
-  list-style: none;
-  display: flex;
-  gap: 10px;
+    list-style: none;
+    display: flex;
+    gap: 10px;
 }
 
 .socials li a {
-  color: #A79986;
+    color: #A79986;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for social links */
+.socials li a:hover {
+    color: #8e82fe;
 }
