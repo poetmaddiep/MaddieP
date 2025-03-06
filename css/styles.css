@@ -188,7 +188,7 @@ section {
     max-width: 900px;
     margin: 20px auto;
     position: relative; /* Ensures controlled placement */
-    background-color: rgba(255, 255, 255, 0.7); /* Slight transparency for sections */
+    background-color: rgba(0, 128, 255, 0.7); /* Slight transparency for sections */
 }
 
 /* Heading Styling */
