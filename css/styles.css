@@ -87,71 +87,73 @@ body {
   line-height: 1.6;
 }
 
-@media (max-width: 768px) {
-    img{
-        max-width: 75px;
-    }
-        }
-    img {
+/* General image styles for the about section */
+img {
   clip-path: circle(50%);
+  max-width: 100%; /* Ensures the image doesn't stretch beyond its container */
+  object-fit: cover; /* Maintains aspect ratio */
 }
+
 /* Container to align about section and video */
-.navli
-.about-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    max-width: 900px;  /* Restricts width to prevent overflow */
-    margin: 0 auto;
-    padding: 20px;
-    flex-wrap: wrap;
-    border: 2px solid #8e82fe;
-    border-radius: 8px;
+.navli .about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  flex-wrap: wrap;
+  border: 2px solid #8e82fe;
+  border-radius: 8px;
 }
 
 /* About text */
 #about {
-    flex: 1;
-    min-width: 280px; /* Ensures responsiveness */
-    max-width: 450px; /* Prevents text from stretching too much */
-    text-align: left;
-    padding: 20px;
+  flex: 1;
+  min-width: 280px;
+  max-width: 450px;
+  text-align: left;
+  padding: 20px;
 }
 
 /* YouTube Video */
 #about-video {
-    flex: 1;
-    min-width: 280px;
-    max-width: 450px;
-    text-align: center;
+  flex: 1;
+  min-width: 280px;
+  max-width: 450px;
+  text-align: center;
 }
 
 /* Adjusting the iframe size */
 #about-video iframe {
-    width: 100%; /* Makes the video responsive */
-    max-width: 400px; /* Reduces size slightly */
-    height: 225px; /* Adjusts proportionally */
+  width: 100%;
+  max-width: 400px;
+  height: 225px;
 }
 
 /* Responsive - Stacks elements on smaller screens */
 @media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
 
+  #about, #about-video {
+    max-width: 100%; /* Allows full width usage for mobile */
+    text-align: center;
+  }
 
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-    }
+  #about-video iframe {
+    max-width: 100%;
+    height: auto; /* Maintains aspect ratio */
+  }
 
-    #about, #about-video {
-        max-width: 100%; /* Allows full width usage for mobile */
-        text-align: center;
-    }
-
-    #about-video iframe {
-        max-width: 100%;
-        height: auto; /* Maintains aspect ratio */
-    }
+  /* Mobile specific image size */
+  img {
+    max-width: 75px;  /* Keeps the image smaller on mobile */
+    margin-bottom: 20px; /* Adds spacing between image and the text below */
+  }
 }
 
 /* General Section Styling */
