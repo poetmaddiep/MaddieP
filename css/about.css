@@ -110,7 +110,22 @@ section h2 {
     padding: 10px 0 5px 10px; /* Adds space from top & left */
     font-size: 1.8em; /* Adjust size as needed */
 }
+.background-video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Makes sure video stays behind content */
+}
 
+.background-video {
+    object-fit: cover; /* Ensures video covers entire background */
+    width: 100%;
+    height: 100%;
+    filter: blur(8px); /* This adds the blur effect */
+}
 /* Paragraph Styling */
 section p {
     margin-top: 10px; /* Adds space between heading and paragraph */
