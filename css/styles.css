@@ -91,12 +91,32 @@ body {
     line-height: 1.6;
 }
 
-/* General image styles for the about section */
+/* Remove global clip-path from all images */
 img {
-    clip-path: circle(50%);
-    max-width: 100%; /* Ensures the image doesn't stretch beyond its container */
-    object-fit: cover; /* Maintains aspect ratio */
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
+
+/* New container for about image */
+.about-image-container {
+    display: flex;
+    justify-content: center; /* Center image */
+    align-items: center;
+    width: 200px; /* Set fixed width */
+    height: 200px; /* Set fixed height */
+    overflow: hidden; /* Prevents clipping issues */
+    border-radius: 50%; /* Keeps the circular shape */
+}
+
+/* Specific about image styling */
+.about-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: circle(50%); /* Ensures circular shape */
+}
+
 
 /* Container to align about section and video */
 .about-container {
