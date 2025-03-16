@@ -92,93 +92,101 @@ body {
   color: #F5F5F5;
   line-height: 1.6;
 }
-section {
-    padding: 40px 20px; /* Adjusted padding for more space */
-    text-align: left; /* Aligns text to the left */
-    border: 2px solid #8e82fe;
-    border-radius: 8px;
-    max-width: 900px;
-    margin: 20px auto;
-    position: relative; /* Ensures controlled placement */
-    background-color: rgba(51, 102, 153, 0.7); /* Slight transparency for sections */
+/* Mobile Layout (Stacked) */
+.zigzag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 5%;
+    background: #56628C;
 }
 
-/* Heading Styling */
-section h2 {
-    text-align: left; /* Moves heading to the left */
-    margin: 0;
-    padding: 10px 0 5px 10px; /* Adds space from top & left */
-    font-size: 1.8em; /* Adjust size as needed */
+.zigzag .text {
+    padding: 20px;
 }
 
-/* Paragraph Styling */
-section p {
-    margin-top: 10px; /* Adds space between heading and paragraph */
-    padding: 0 10px 10px 10px; /* Adjusted padding */
-    font-size: 1.1em;
+.zigzag .text h2 {
+    font-size: 1.8rem;
+    color: #A79986;
+    margin-bottom: 10px;
+}
+
+.zigzag .text p {
+    font-size: 1.1rem;
     line-height: 1.6;
 }
-.background-video-container {
-    position: fixed;
-    top: 0;
-    left: 0;
+
+.zigzag .image img {
     width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1; /* Makes sure video stays behind content */
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
 }
 
-.background-video {
-    object-fit: cover; /* Ensures video covers entire background */
-    width: 100%;
-    height: 100%;
-    filter: blur(8px); /* This adds the blur effect */
+/* Connect Section */
+.connect {
+    text-align: center;
+    padding: 40px 10%;
+    background-color: #263459;
 }
-/* Paragraph Styling */
 
-        .bio-img {
-            width: 100%;
-            max-width: 250px;
-            display: block;
-            margin: 20px auto;
-            border-radius: 10px;
-        }
-        .contact {
-            background: #3e4a72;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            margin-top: 40px;
-        }
-        a {
-            color: #339966;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        ul {
-            padding-left: 20px;
-        }
+.connect h2 {
+    font-size: 2rem;
+    color: #A79986;
+}
 
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .container {
-                margin: 10px;
-                padding: 15px;
-            }
-            header {
-                font-size: 20px;
-                padding: 15px;
-            }
-            h1, h2 {
-                font-size: 22px;
-            }
-            p, ul {
-                font-size: 16px;
-            }
-        }
-  
+.connect ul {
+    list-style: none;
+    padding: 0;
+}
+
+.connect ul li {
+    display: inline;
+    margin: 10px;
+}
+
+.connect ul li a {
+    color: #F5F5F5;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.connect ul li a:hover {
+    color: #8e82fe;
+}
+
+/* Footer */
+.footer {
+    background-color: #263459;
+    padding: 10px;
+    text-align: center;
+    color: #F5F5F5;
+}
+
+/* Tablet & Desktop: Enable Zigzag */
+@media (min-width: 768px) {
+    .zigzag {
+        flex-direction: row;
+        text-align: left;
+        padding: 60px 10%;
+    }
+
+    .zigzag .text {
+        flex: 1;
+    }
+
+    .zigzag .image {
+        flex: 1;
+        text-align: right;
+    }
+
+    .zigzag.reverse {
+        flex-direction: row-reverse;
+    }
+}
 /* Footer */
 .footer {
   background-color: #263459;
