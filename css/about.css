@@ -96,6 +96,36 @@ body {
   color: #F5F5F5;
   line-height: 1.6;
 }
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #263459;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
 /* Mobile Layout (Stacked) */
 .zigzag {
     display: flex;
@@ -129,37 +159,44 @@ body {
     margin-top: 20px;
 }
 
-/* Connect Section */
-.connect {
-    text-align: center;
-    padding: 40px 10%;
-    background-color: #263459;
-}
+/* Tablet & Desktop: Enable Zigzag */
+@media (min-width: 768px) {
+    .zigzag {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        justify-content: space-between;
+        padding: 60px 10%;
+    }
 
-.connect h2 {
-    font-size: 2rem;
-    color: #A79986;
-}
+    .zigzag .text {
+        flex: 1;
+        padding-right: 20px;
+    }
 
-.connect ul {
-    list-style: none;
-    padding: 0;
-}
+    .zigzag .image {
+        flex: 1;
+        text-align: center;
+    }
 
-.connect ul li {
-    display: inline;
-    margin: 10px;
-}
+    .zigzag .image img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin-top: 0;
+    }
 
-.connect ul li a {
-    color: #F5F5F5;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: 0.3s;
-}
+    /* Zigzag Reverse Fix */
+    .zigzag.reverse {
+        flex-direction: row-reverse;
+    }
 
-.connect ul li a:hover {
-    color: #8e82fe;
+    .zigzag.reverse .text {
+        padding-right: 0;
+        padding-left: 20px;
+    }
 }
 
 /* Footer */
