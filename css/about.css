@@ -85,7 +85,7 @@ body {
     }
 }
 
-/* ==== ABOUT SECTION STYLES ==== */
+/* ==== ABOUT SECTION STYLES (MOBILE-FIRST) ==== */
 .zigzag {
     display: flex;
     flex-direction: column;
@@ -117,17 +117,15 @@ body {
     margin-top: 20px;
 }
 
-/* ==== TABLET & DESKTOP LAYOUT ==== */
+/* === TABLET & DESKTOP: ENABLE ZIGZAG === */
 @media (min-width: 768px) {
     .zigzag {
+        display: flex;
         flex-direction: row;
-        text-align: left;
+        align-items: center;
         justify-content: space-between;
+        text-align: left;
         padding: 60px 10%;
-    }
-
-    .zigzag.reverse {
-        flex-direction: row-reverse;
     }
 
     .zigzag .text {
@@ -139,7 +137,43 @@ body {
         flex: 1;
         text-align: center;
     }
+
+    /* Apply reverse flex-direction for every other section */
+    .zigzag.reverse {
+        flex-direction: row-reverse;
+    }
+
+    .zigzag.reverse .text {
+        padding-left: 20px;
+    }
+
+    .zigzag.reverse .image {
+        text-align: center;
+    }
+}
+
+/* ==== CENTERED TEXT SECTION (PARTNERSHIPS) ==== */
+.center-text {
+    text-align: center;
+    padding: 60px 10%;
+    background: #455070;
+}
+
+.center-text h2 {
+    font-size: 2rem;
+    color: #A79986;
+}
+
+.center-text p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 /* ==== FOOTER ==== */
-.footer
+.footer {
+    background-color: #263459;
+    padding: 10px;
+    text-align: center;
+    color: #F5F5F5;
+}
