@@ -94,24 +94,31 @@ body {
 }
 /* Footer */
 .footer {
-  background-color: #263459;
-  padding: 10px;
-  color: #F5F5F5;
+    background-color: #263459;
+    padding: 10px;
+    color: #F5F5F5;
 }
 
 .footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .socials {
-  list-style: none;
-  display: flex;
-  gap: 10px;
+    list-style: none;
+    display: flex;
+    gap: 10px;
 }
 
 .socials li a {
-  color: #A79986;
+    color: #A79986;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for social links */
+.socials li a:hover {
+    color: #8e82fe;
 }
