@@ -1,3 +1,17 @@
+/* ==== GLOBAL STYLES ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Garamond', serif;
+    background-color: #3e4a72;
+    color: #F5F5F5;
+    line-height: 1.6;
+}
+
 /* ==== NAVIGATION ==== */
 .navbar {
     display: flex;
@@ -17,7 +31,7 @@
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Cormorant Garamond', serif;
-    color: white; /* Ensure the logo text is white */
+    color: white;
 }
 
 .nav-links {
@@ -37,12 +51,11 @@
     transition: color 0.3s ease;
 }
 
-/* Hover Effect */
 .nav-links a:hover {
-    color: #8e82fe; /* Change color on hover */
+    color: #8e82fe;
 }
 
-/* Mobile Navigation */
+/* ==== MOBILE MENU ==== */
 .menu-toggle {
     display: none;
     font-size: 24px;
@@ -52,185 +65,119 @@
     cursor: pointer;
 }
 
-/* Hide nav links by default on mobile */
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
     }
     .nav-links {
-        display: none; /* Hide by default */
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
         position: absolute;
         top: 60px;
-        right: 10px;
-        background: white;
-        width: 200px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    .nav-links a {
-        color: black;
-        padding: 10px;
+        left: 0;
+        text-align: center;
     }
     .nav-links.active {
-        display: block; /* Show when active */
+        display: flex;
     }
-
     .nav-links li {
         margin: 15px 0;
     }
-
-    .menu-toggle {
-        display: block;
-    }
 }
 
-body {
-    margin: 0;
-    font-family: Garamond, serif;
-    background-color: #3e4a72;
-    color: #F5F5F5;
-    line-height: 1.6;
-}
-
-/* Remove global clip-path from all images */
-img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-/* New container for about image */
-.about-image-container {
+/* ==== ABOUT SECTION (ZIGZAG) ==== */
+.zigzag {
     display: flex;
-    justify-content: center; /* Center image */
+    flex-direction: column;
     align-items: center;
-    width: 200px; /* Set fixed width */
-    height: 200px; /* Set fixed height */
-    overflow: hidden; /* Prevents clipping issues */
-    border-radius: 50%; /* Keeps the circular shape */
-}
-
-/* Specific about image styling */
-.about-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    clip-path: circle(50%); /* Ensures circular shape */
-}
-
-
-/* Container to align about section and video */
-.about-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    max-width: 900px;
-    margin-top: 100px;
-    padding: 20px;
-    flex-wrap: wrap;
-    border: 2px solid #8e82fe;
-    border-radius: 8px;
-    background-color: rgba(51, 102, 153, 0.7); /* Lighten the container for contrast */
-}
-
-/* Make sure video takes full width and height */
-.background-video-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1; /* Makes sure video stays behind content */
-}
-
-.background-video {
-    object-fit: cover; /* Ensures video covers entire background */
-    width: 100%;
-    height: 100%;
-    filter: blur(8px); /* This adds the blur effect */
-}
-
-/* About text */
-#about {
-    flex: 1;
-    min-width: 280px;
-    max-width: 450px;
-    text-align: left;
-    padding: 20px;
-}
-
-/* YouTube Video */
-#about-video {
-    flex: 1;
-    min-width: 280px;
-    max-width: 450px;
     text-align: center;
+    padding: 40px 5%;
+    background: #56628C;
 }
 
-/* Adjusting the iframe size */
-#about-video iframe {
+.zigzag .text {
+    padding: 20px;
+}
+
+.zigzag .text h2 {
+    font-size: 1.8rem;
+    color: #A79986;
+    margin-bottom: 10px;
+}
+
+.zigzag .text p {
+    font-size: 1.1rem;
+}
+
+.zigzag .image img {
     width: 100%;
     max-width: 400px;
-    height: 225px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
 }
 
-/* Responsive - Stacks elements on smaller screens */
-@media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
+/* === ZIGZAG LAYOUT FOR LARGER SCREENS === */
+@media (min-width: 768px) {
+    .zigzag {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        padding: 60px 10%;
+        gap: 30px; /* Adds spacing between text and images */
+    }
+
+    .zigzag .text {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .zigzag .image {
+        flex: 1;
         text-align: center;
     }
 
-    #about, #about-video {
-        max-width: 100%; /* Allows full width usage for mobile */
+    /* Properly reverses alternating sections */
+    .zigzag.reverse {
+        flex-direction: row-reverse;
+    }
+
+    .zigzag.reverse .text {
+        padding-left: 20px;
+    }
+
+    .zigzag.reverse .image {
         text-align: center;
     }
-
-    #about-video iframe {
-        max-width: 100%;
-        height: auto; /* Maintains aspect ratio */
-    }
-
-    /* Mobile specific image size */
-    img {
-        max-width: 120px;  /* Keeps the image smaller on mobile */
-        margin-bottom: 20px; /* Adds spacing between image and the text below */
-    }
 }
 
-/* General Section Styling */
-section {
-    padding: 40px 20px; /* Adjusted padding for more space */
-    text-align: left; /* Aligns text to the left */
-    border: 2px solid #8e82fe;
-    border-radius: 8px;
-    max-width: 900px;
-    margin: 20px auto;
-    position: relative; /* Ensures controlled placement */
-    background-color: rgba(51, 102, 153, 0.7); /* Slight transparency for sections */
+/* ==== CENTERED TEXT SECTION (PARTNERSHIPS) ==== */
+.center-text {
+    text-align: center;
+    padding: 60px 10%;
+    background: #455070;
 }
 
-/* Heading Styling */
-section h2 {
-    text-align: left; /* Moves heading to the left */
-    margin: 0;
-    padding: 10px 0 5px 10px; /* Adds space from top & left */
-    font-size: 1.8em; /* Adjust size as needed */
+.center-text h2 {
+    font-size: 2rem;
+    color: #A79986;
 }
 
-/* Paragraph Styling */
-section p {
-    margin-top: 10px; /* Adds space between heading and paragraph */
-    padding: 0 10px 10px 10px; /* Adjusted padding */
-    font-size: 1.1em;
-    line-height: 1.6;
+.center-text p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-/* Footer */
+/* ==== FOOTER ==== */
 .footer {
     background-color: #263459;
     padding: 10px;
+    text-align: center;
     color: #F5F5F5;
 }
 
